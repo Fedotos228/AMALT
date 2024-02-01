@@ -1,0 +1,125 @@
+.header {
+    background-color: #FFF;
+    padding: 25px 0;
+    border-bottom: 1px solid $lines;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    @media (max-width: $mobileMedium) {
+        .header__logo {
+            width: 70%;
+        }
+        
+    }
+
+    
+    &__nav {
+        &-list {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            li {
+                a {
+                    transition: .2s;
+
+                    &:hover {
+                        color: $primaryHover;
+                    }
+                }
+            }
+        }
+
+        .mobile__language {
+            display: none;
+        }
+
+        @media (max-width: $tablet) {
+            position: fixed;
+            top: 0;
+            right: 0;
+            flex-direction: column;
+            transform: translateX(100%);
+            background-color: #fff;
+            height: 100%;
+            z-index: 4;
+            padding-top: 40px;
+            padding-left: 40px;
+            transition: 0.4s;
+            width: 30%;
+            align-items: flex-start;
+
+            &.active {
+                transform: translateX(0);
+            }
+            .header__nav-list {
+                flex-direction: column;
+                gap: 20px;
+                margin-bottom: 40px;
+                align-items: flex-start;
+                justify-content: center;
+            }
+            .mobile__language {
+                display: flex;
+            }
+        }
+
+        @media (max-width: $mobile) {
+            width: 40%;
+        }
+        @media (max-width: $mobileSmall) {
+            width: 50%;
+        }
+    }
+
+    &__languages {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: $tablet) {
+            display: none;
+        }
+
+        &-item {
+            transition: .2s;
+
+            a {
+                display: block;
+                padding: 10px;
+            }
+
+            &.active,
+            &:hover {
+                background-color: $primary;
+
+                a {
+                    color: #FFF;
+                }
+            }
+        }
+    }
+
+    &.sticky {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        right: 0;
+        animation: fixedHeader 0.4s;
+        z-index: 5;
+    }
+}
+
+@keyframes fixedHeader {
+    from {
+        transform: translateY(-50px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}

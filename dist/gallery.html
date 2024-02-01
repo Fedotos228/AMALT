@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Noutăți</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/stlightbox@1.1.36/dist/css/stlightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+        <header class="header">
+    <div class="header__container">
+        <a href="/" class="header__logo">
+            <img src="img/logo.svg" alt="Logo" class="header__logo-img">
+        </a>
+        <div class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a href="/">Home</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="/about.html">Despre noi</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="/news.html">Noutăți</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="/gallery.html">Galerie</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="/contacts.html">Contacte</a>
+                </li>
+            </ul>
+            <ul class="mobile__language">
+                <li class="header__languages-item active">
+                    <a href="#">
+                        RO
+                    </a>
+                </li>
+                <li class="header__languages-item">
+                    <a href="#">
+                        EN
+                    </a>
+                </li>
+                <li class="header__languages-item">
+                    <a href="#">
+                        RU
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <ul class="header__languages">
+            <li class="header__languages-item active">
+                <a href="#">
+                    RO
+                </a>
+            </li>
+            <li class="header__languages-item">
+                <a href="#">
+                    EN
+                </a>
+            </li>
+            <li class="header__languages-item">
+                <a href="#">
+                    RU
+                </a>
+            </li>
+        </ul>
+        <div class="burger">
+            <span></span>
+        </div>
+    </div>
+</header>
+    <main class="gallery">
+        <div class="gallery-heading"
+            style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.92) 100%), url(img/search.jpeg), lightgray 50% / cover no-repeat;">
+            <h2>
+                Galerie
+            </h2>
+        </div>
+        <section>
+            <ul class="categories">
+                <li class="active">
+                    <a href="#">Toate</a>
+                </li>
+                <li>
+                    <a href="#">Știri</a>
+                </li>
+                <li>
+                    <a href="#">Comunicate de presă</a>
+                </li>
+            </ul>
+            <div class="gallery__container">
+                <div class="gallery-grid">
+                    <a href="img/galleryPost.jpeg" class="gallery-grid__item" data-stlightbox="gallery">
+                        <img src="img/galleryPost.jpeg" alt="Image 1" />
+                        <div class="label">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1 5.25C1 4.00736 2.00736 3 3.25 3H16.75C17.9926 3 19 4.00736 19 5.25V14.75C19 15.9926 17.9926 17 16.75 17H3.25C2.00736 17 1 15.9926 1 14.75V5.25ZM2.5 11.0607V14.75C2.5 15.1642 2.83579 15.5 3.25 15.5H16.75C17.1642 15.5 17.5 15.1642 17.5 14.75V12.0607L15.2803 9.84099C14.9874 9.5481 14.5126 9.5481 14.2197 9.84099L12.3107 11.75L12.7803 12.2197C13.0732 12.5126 13.0732 12.9874 12.7803 13.2803C12.4874 13.5732 12.0126 13.5732 11.7197 13.2803L6.53033 8.09099C6.23744 7.7981 5.76256 7.7981 5.46967 8.09099L2.5 11.0607ZM12 7C12 7.55228 11.5523 8 11 8C10.4477 8 10 7.55228 10 7C10 6.44772 10.4477 6 11 6C11.5523 6 12 6.44772 12 7Z"
+                                    fill="#232323" />
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="img/galleryPost2.jpeg" class="gallery-grid__item" data-stlightbox="gallery">
+                        <img src="img/galleryPost2.jpeg" alt="Image 1" />
+                        <div class="label">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path
+                                    d="M3.25 4C2.00736 4 1 5.00736 1 6.25V13.75C1 14.9926 2.00736 16 3.25 16H10.75C11.9926 16 13 14.9926 13 13.75V6.25C13 5.00736 11.9926 4 10.75 4H3.25Z"
+                                    fill="#232323" />
+                                <path
+                                    d="M19 4.75002C19 4.44668 18.8173 4.1732 18.537 4.05711C18.2568 3.94103 17.9342 4.00519 17.7197 4.21969L14.7197 7.21969C14.579 7.36034 14.5 7.55111 14.5 7.75002V12.25C14.5 12.4489 14.579 12.6397 14.7197 12.7804L17.7197 15.7804C17.9342 15.9949 18.2568 16.059 18.537 15.9429C18.8173 15.8268 19 15.5534 19 15.25V4.75002Z"
+                                    fill="#232323" />
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="img/galleryPost3.jpeg" class="gallery-grid__item" data-stlightbox="gallery">
+                        <img src="img/galleryPost3.jpeg" alt="Image 1" />
+                        <div class="label">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1 5.25C1 4.00736 2.00736 3 3.25 3H16.75C17.9926 3 19 4.00736 19 5.25V14.75C19 15.9926 17.9926 17 16.75 17H3.25C2.00736 17 1 15.9926 1 14.75V5.25ZM2.5 11.0607V14.75C2.5 15.1642 2.83579 15.5 3.25 15.5H16.75C17.1642 15.5 17.5 15.1642 17.5 14.75V12.0607L15.2803 9.84099C14.9874 9.5481 14.5126 9.5481 14.2197 9.84099L12.3107 11.75L12.7803 12.2197C13.0732 12.5126 13.0732 12.9874 12.7803 13.2803C12.4874 13.5732 12.0126 13.5732 11.7197 13.2803L6.53033 8.09099C6.23744 7.7981 5.76256 7.7981 5.46967 8.09099L2.5 11.0607ZM12 7C12 7.55228 11.5523 8 11 8C10.4477 8 10 7.55228 10 7C10 6.44772 10.4477 6 11 6C11.5523 6 12 6.44772 12 7Z"
+                                    fill="#232323" />
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="img/galleryPost3.jpeg" class="gallery-grid__item" data-stlightbox="gallery">
+                        <img src="img/galleryPost3.jpeg" alt="Image 1" />
+                        <div class="label">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1 5.25C1 4.00736 2.00736 3 3.25 3H16.75C17.9926 3 19 4.00736 19 5.25V14.75C19 15.9926 17.9926 17 16.75 17H3.25C2.00736 17 1 15.9926 1 14.75V5.25ZM2.5 11.0607V14.75C2.5 15.1642 2.83579 15.5 3.25 15.5H16.75C17.1642 15.5 17.5 15.1642 17.5 14.75V12.0607L15.2803 9.84099C14.9874 9.5481 14.5126 9.5481 14.2197 9.84099L12.3107 11.75L12.7803 12.2197C13.0732 12.5126 13.0732 12.9874 12.7803 13.2803C12.4874 13.5732 12.0126 13.5732 11.7197 13.2803L6.53033 8.09099C6.23744 7.7981 5.76256 7.7981 5.46967 8.09099L2.5 11.0607ZM12 7C12 7.55228 11.5523 8 11 8C10.4477 8 10 7.55228 10 7C10 6.44772 10.4477 6 11 6C11.5523 6 12 6.44772 12 7Z"
+                                    fill="#232323" />
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="img/galleryPost3.jpeg" class="gallery-grid__item" data-stlightbox="gallery">
+                        <img src="img/galleryPost3.jpeg" alt="Image 1" />
+                        <div class="label">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1 5.25C1 4.00736 2.00736 3 3.25 3H16.75C17.9926 3 19 4.00736 19 5.25V14.75C19 15.9926 17.9926 17 16.75 17H3.25C2.00736 17 1 15.9926 1 14.75V5.25ZM2.5 11.0607V14.75C2.5 15.1642 2.83579 15.5 3.25 15.5H16.75C17.1642 15.5 17.5 15.1642 17.5 14.75V12.0607L15.2803 9.84099C14.9874 9.5481 14.5126 9.5481 14.2197 9.84099L12.3107 11.75L12.7803 12.2197C13.0732 12.5126 13.0732 12.9874 12.7803 13.2803C12.4874 13.5732 12.0126 13.5732 11.7197 13.2803L6.53033 8.09099C6.23744 7.7981 5.76256 7.7981 5.46967 8.09099L2.5 11.0607ZM12 7C12 7.55228 11.5523 8 11 8C10.4477 8 10 7.55228 10 7C10 6.44772 10.4477 6 11 6C11.5523 6 12 6.44772 12 7Z"
+                                    fill="#232323" />
+                            </svg>
+                        </div>
+                    </a>
+                    <a href="img/galleryPost3.jpeg" class="gallery-grid__item" data-stlightbox="gallery">
+                        <img src="img/galleryPost3.jpeg" alt="Image 1" />
+                        <div class="label">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1 5.25C1 4.00736 2.00736 3 3.25 3H16.75C17.9926 3 19 4.00736 19 5.25V14.75C19 15.9926 17.9926 17 16.75 17H3.25C2.00736 17 1 15.9926 1 14.75V5.25ZM2.5 11.0607V14.75C2.5 15.1642 2.83579 15.5 3.25 15.5H16.75C17.1642 15.5 17.5 15.1642 17.5 14.75V12.0607L15.2803 9.84099C14.9874 9.5481 14.5126 9.5481 14.2197 9.84099L12.3107 11.75L12.7803 12.2197C13.0732 12.5126 13.0732 12.9874 12.7803 13.2803C12.4874 13.5732 12.0126 13.5732 11.7197 13.2803L6.53033 8.09099C6.23744 7.7981 5.76256 7.7981 5.46967 8.09099L2.5 11.0607ZM12 7C12 7.55228 11.5523 8 11 8C10.4477 8 10 7.55228 10 7C10 6.44772 10.4477 6 11 6C11.5523 6 12 6.44772 12 7Z"
+                                    fill="#232323" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <button class="view-more button button__transparent">
+                    ARATĂ MAI MULTE
+                </button>
+            </div>
+        </section>
+    </main>
+    <button class="scroll-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11.4697 2.46967C11.7626 2.17678 12.2374 2.17678 12.5303 2.46967L20.0303 9.96967C20.3232 10.2626 20.3232 10.7374 20.0303 11.0303C19.7374 11.3232 19.2626 11.3232 18.9697 11.0303L12.75 4.81066V21C12.75 21.4142 12.4142 21.75 12 21.75C11.5858 21.75 11.25 21.4142 11.25 21V4.81066L5.03033 11.0303C4.73744 11.3232 4.26256 11.3232 3.96967 11.0303C3.67678 10.7374 3.67678 10.2626 3.96967 9.96967L11.4697 2.46967Z"
+                fill="white" 
+            />
+        </svg>
+    </button>
+    <footer class="footer"
+    style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.90) 0%, rgba(0, 0, 0, 0.90) 100%), url('img/footer.jpeg'), lightgray 50% / cover no-repeat;">
+    <div class="footer__container">
+        <h4>Asociația Moldo-Americană de Logistică și Transport</h4>
+        <div class="footer__row address">
+            <a href="#">Moldova, Chișinău, bd. Decebal 6</a>
+            <a href="mailto:contact@amalt.md">contact@amalt.md</a>
+        </div>
+        <ul class="footer__row footer__nav">
+            <li class="footer__nav-item">
+                <a href="#">Acasă</a>
+            </li>
+            <li class="footer__nav-item">
+                <a href="#">Despre noi</a>
+            </li>
+            <li class="footer__nav-item">
+                <a href="#">Noutăți</a>
+            </li>
+            <li class="footer__nav-item">
+                <a href="#">Galerie</a>
+            </li>
+            <li class="footer__nav-item">
+                <a href="#">Contacte</a>
+            </li>
+        </ul>
+        <div class="footer__row socials">
+            <a href="https://facebook.com">
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+                    <path d="M32.5 0H0.5V32H32.5V0Z" fill="#1877F2" />
+                    <path
+                        d="M24.5 16C24.5 11.6 20.9 8 16.5 8C12.1 8 8.5 11.6 8.5 16C8.5 20 11.4 23.3 15.2 23.9V18.3H13.2V16H15.2V14.2C15.2 12.2 16.4 11.1 18.2 11.1C19.1 11.1 20 11.3 20 11.3V13.3H19C18 13.3 17.7 13.9 17.7 14.5V16H19.9L19.5 18.3H17.6V24C21.6 23.4 24.5 20 24.5 16Z"
+                        fill="white" fill-opacity="0.8" />
+                </svg>
+                <span>facebook.com/amalt</span>
+            </a>
+            <a href="https://linkedin.com">
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
+                    <path d="M32.5 0H0.5V32H32.5V0Z" fill="#2867B2" />
+                    <path
+                        d="M12.1 24H8.7V13.3H12.1V24ZM10.4 11.8C9.3 11.8 8.5 11 8.5 9.9C8.5 8.8 9.4 8 10.4 8C11.5 8 12.3 8.8 12.3 9.9C12.3 11 11.5 11.8 10.4 11.8ZM24.5 24H21.1V18.2C21.1 16.5 20.4 16 19.4 16C18.4 16 17.4 16.8 17.4 18.3V24H14V13.3H17.2V14.8C17.5 14.1 18.7 13 20.4 13C22.3 13 24.3 14.1 24.3 17.4V24H24.5Z"
+                        fill="white" fill-opacity="0.8" />
+                </svg>
+                <span>linkedin.com/company/amalt</span>
+            </a>
+        </div>
+        <div class="footer__row">
+            <p>Copyright © 2024. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+        integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

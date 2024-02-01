@@ -1,0 +1,95 @@
+.contacts {
+    &__grid {
+        display: grid;
+        grid-template-columns: minmax(240px, 530px) 50%;
+        gap: 30px;
+
+        @media (max-width: $tablet) {
+            grid-template-columns: 1fr;
+            img {
+                order: 2;
+                height: 450px
+            }
+        }
+    }
+
+    &__body {
+        h4 {
+            margin-bottom: 25px;
+        }
+    }
+
+    .address {
+        margin-bottom: 25px;
+
+        >a {
+            &:first-of-type {
+                border-right-color: $lines;
+            }
+            @media (max-width: $mobileSmall){
+                display: block;
+                margin-bottom: 10px;
+                border-right-color: transparent !important;
+            }
+        }
+
+    }
+
+    &__socials {
+        display: flex;
+        margin-bottom: 50px;
+
+        @media (max-width: $mobileSmall) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+    }
+
+    &__form {
+        form {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+
+            @media (max-width: $mobileMedium) {
+                grid-template-columns: 1fr;
+            }
+
+            label {
+                p {
+                    margin-bottom: 6px;
+                    color: $maincolor;
+
+                    span {
+                        color: $red;
+                    }
+                }
+
+                &:nth-child(4) {
+                    width: 100%;
+                    grid-column: 3 span;
+                    @media (max-width: $mobileMedium) {
+                        grid-column: 1 span;
+                    }
+                }
+
+                textarea {
+                    width: 100%;
+                    min-height: 135px;
+                    max-height: 240px;
+                    resize: vertical;
+                }
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                border: 1px solid $lines;
+                outline: none;
+                padding: 10px 15px;
+            }
+        }
+    }
+}

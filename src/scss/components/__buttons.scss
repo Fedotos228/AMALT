@@ -1,0 +1,33 @@
+.button {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 14px 0;
+    transition: .2s all;
+    svg {
+        transition: .2s;
+    }
+    &__gray {
+        gap: 5px;
+        background-color: $white300;
+        color: #FFF;
+    }
+    &__transparent {
+        background-color: transparent;
+        border: 1px solid $lines;
+        &:hover {
+            background-color: $primaryHover;
+            color: #FFF;
+        }
+    }
+    &__primary {
+        background-color: $primary;
+        color: #FFF;
+        text-transform: uppercase;
+        &:hover {
+            background-color: $primaryHover;
+        }
+    }
+}
