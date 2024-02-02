@@ -88,7 +88,11 @@
                 width: 100%;
                 border: 1px solid $lines;
                 outline: none;
-                padding: 10px 15px;
+                padding: 12px 15px;
+                transition: .2s;
+                &:focus {
+                    border-color: $primary;
+                }
             }
         }
     }

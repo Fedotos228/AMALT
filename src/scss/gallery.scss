@@ -34,10 +34,14 @@
 
         &__item {
             position: relative;
-
+            overflow: hidden;
             img {
+                transition: 0.3s;
                 object-fit: cover;
                 height: 317px;
+                &:hover {
+                    transform: scale(1.1);
+                }
             }
 
             .label {
@@ -56,7 +60,6 @@
             &:hover {
                 .label {
                     background-color: $white800;
-
                 }
             }
         }

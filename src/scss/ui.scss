@@ -65,6 +65,7 @@ img {
     display: none;
 }
 
+
 .text-center {
     text-align: center;
 }
@@ -246,7 +247,7 @@ img {
     }
 }
 
-.posts__grid{
+.posts__grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 30px;
@@ -304,10 +305,12 @@ img {
     display: flex;
     align-items: center;
     gap: 10px;
+
     li {
         a {
-            color: $dark700;  
+            color: $dark700;
         }
+
         &:not(:last-of-type) {
             &::after {
                 content: '/';
@@ -315,7 +318,8 @@ img {
                 color: $dark700;
             }
         }
-        span{
+
+        span {
             color: $dark200;
         }
     }
@@ -326,27 +330,34 @@ img {
     align-items: center;
     justify-content: center;
     gap: 30px;
-    @include adaptiv-value("padding-top", 50, 25, 1);
-    padding-bottom: 25px;
+    @include adaptiv-value("padding-top", 50, 40, 1);
+    @include adaptiv-value("padding-bottom", 40, 25, 1);
     padding-inline: 15px;
+
     @media (max-width: $mobileSmall) {
-      flex-wrap: wrap;  
-    } 
+        flex-wrap: wrap;
+    }
+
     li {
         font-size: 24px;
+        @include adaptiv-value("font-size", 24, 20, 1);
         font-weight: 700;
-        a{
+
+        a {
             transition: .2s;
             color: $dark500;
         }
+
         &:hover {
             a {
                 color: $primary;
             }
         }
+
         &.active {
             text-decoration-line: underline;
-            a{
+
+            a {
                 color: $maincolor;
             }
         }
@@ -370,7 +381,6 @@ img {
         display: flex;
         align-items: center;
         gap: 5px;
-        transition: .2s;
 
         &:hover {
             span {
@@ -381,6 +391,7 @@ img {
 
     span {
         text-decoration: underline;
+        transition: .2s;
     }
 }
 
@@ -398,9 +409,14 @@ img {
     z-index: 12;
     pointer-events: none;
     transition: .4s;
+
+    &:hover {
+        transition: .2s;
+        transform: scale(1.1);
+    }
+
     &.active {
         bottom: 30px;
         pointer-events: visible;
     }
 }
-

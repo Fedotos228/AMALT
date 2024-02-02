@@ -27,6 +27,7 @@
                 a {
                     transition: .2s;
 
+                    &.active,
                     &:hover {
                         color: $primaryHover;
                     }
@@ -72,7 +73,7 @@
             width: 40%;
         }
         @media (max-width: $mobileSmall) {
-            width: 50%;
+            width: 70%;
         }
     }
 

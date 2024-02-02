@@ -40,13 +40,18 @@ if (foundersCard) {
 
         showButton.addEventListener("click", () => {
             dialog.showModal();
+            document.body.classList.add('lock');
         });
 
         closeButton.addEventListener("click", () => {
             dialog.close();
+            document.body.classList.remove('lock');
         });
+
     })
 }
+
+
 
 
 const lightbox = new Stlightbox({

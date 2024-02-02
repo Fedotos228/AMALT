@@ -114,8 +114,9 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 30px;
-            margin-top: 80px;
+            gap: 40px;
+            margin-top: 50px;
+            padding: 20px;
             overflow-x: scroll;
 
 
@@ -175,11 +176,17 @@
                                 justify-content: center;
                                 width: 60px;
                                 height: 60px;
-                                border: 1px solid $lines;
-                                background-color: $background;
+                                border: 1px solid $maincolor;
+                                background-color: $maincolor;
+                                transition: .2s ease-out;
                                 @media (max-width: $mobile) {
                                     width: 40px;
                                     height: 40px;
+                                }
+                                svg {
+                                    path {
+                                        stroke: #FFF;
+                                    }
                                 }
                                 
                                 svg {
@@ -190,10 +197,11 @@
                                         width: 16px;
                                         height: 16px;
                                     }
+                                }
 
-                                    path {
-                                        stroke: $maincolor;
-                                    }
+                                &:hover {
+                                    background-color: $primaryHover;
+                                    border-color: $primaryHover;
                                 }
 
                                 &__prev {
@@ -215,12 +223,11 @@
                                 }
 
                                 &.swiper-button-disabled {
-                                    background-color: $maincolor;
-                                    border-color: $maincolor;
-
-                                    svg {
+                                    border-color: $lines;
+                                    background-color: $background;
+                                    svg{
                                         path {
-                                            stroke: $white500;
+                                            stroke: $dark500
                                         }
                                     }
                                 }
