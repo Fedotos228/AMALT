@@ -1356,6 +1356,9 @@ img {
   color: rgba(35, 35, 35, 0.5);
 }
 .single-image {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1080px;
   height: 500px;
   object-fit: cover;
   margin-bottom: 30px;
@@ -1387,6 +1390,28 @@ img {
 }
 .single-body ol li {
   list-style-type: decimal;
+}
+.single-body blockquote {
+  margin-bottom: 30px;
+  padding-left: 15px;
+  border-left: 1px solid #8F00FF;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+}
+@media (max-width: 1300px) {
+  .single-body blockquote {
+    line-height: calc(28px + 4 * (100vw - 320px) / 980);
+  }
+}
+.single-body iframe {
+  width: 100%;
+  height: 520px;
+}
+@media (max-width: 1300px) {
+  .single-body iframe {
+    height: calc(300px + 220 * (100vw - 320px) / 980);
+  }
 }
 
 .gallery-heading {
