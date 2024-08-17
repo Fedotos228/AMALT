@@ -32,7 +32,11 @@
         }
     }
     &-image{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1080px;
         height: 500px;
+        
         object-fit: cover;
         margin-bottom: 30px;
     }
@@ -66,6 +70,19 @@
             li{
                 list-style-type: decimal;
             }
+        }
+        blockquote {
+            margin-bottom: 30px;
+            padding-left: 15px;
+            border-left: 1px solid $primary;
+            font-size: 20px;
+            font-weight: 500;
+            @include adaptiv-value("line-height", 32, 28, 1);
+        }
+        
+        iframe {
+            width: 100%;
+            @include adaptiv-value("height", 520, 300, 1);
         }
     }
 }
