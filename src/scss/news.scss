@@ -1,15 +1,16 @@
 .news {
+    @include adaptiv-value('padding-bottom', 80, 50, 1);
     &__search {
         padding: 40px 0;
 
-        >.news__container {
+        > .news__container {
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 15px;
 
             h2 {
-                color: #FFF;
+                color: #fff;
             }
 
             @media (max-width: $mobileMedium) {
@@ -20,14 +21,14 @@
         form {
             width: 100%;
             max-width: 500px;
-            fieldset{
+            fieldset {
                 border: none;
                 position: relative;
                 input {
-                    color: #FFF;
+                    color: #fff;
                     outline: none;
                     background-color: transparent;
-                    transition: .2s;
+                    transition: 0.2s;
                     padding: 15px 40px 15px 18px;
                     border-radius: 8px;
                     background-color: $search;
@@ -38,7 +39,7 @@
                     }
                 }
 
-                button{
+                button {
                     position: absolute;
                     height: 24px;
                     top: 50%;
@@ -46,7 +47,6 @@
                     transform: translateY(-50%);
                 }
             }
-
         }
     }
 }

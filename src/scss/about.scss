@@ -3,6 +3,31 @@
         display: grid;
         grid-template-columns: repeat(5, 385px);
         overflow-x: scroll;
+        padding-bottom: 24px;
+        &::-webkit-scrollbar {
+            height: 7px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $maincolor;
+            border-radius: 4px;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background-color: lighten($maincolor, 3%);
+        }
+
+        &::-webkit-scrollbar-track-piece:end {
+            border-radius: 4px;
+            background: $lines;
+            margin-right: 20px;
+        }
+
+        &::-webkit-scrollbar-track-piece:start {
+            border-radius: 4px;
+            background: $lines;
+            margin-left: 20px;
+        }
         @media (max-width: $mobileSmall) {
             grid-template-columns: repeat(5, 340px);
         }
@@ -23,11 +48,11 @@
                 height: 100%;
                 object-fit: cover;
                 z-index: -1;
-                transition: .4s;
+                transition: 0.4s;
             }
 
             h3 {
-                color: #FFF;
+                color: #fff;
                 margin-bottom: 8px;
             }
 
@@ -37,10 +62,10 @@
                 border-bottom: 1px solid $lines100;
                 margin-bottom: 25px;
                 padding-bottom: 25px;
-                transition: .4s;
+                transition: 0.4s;
 
                 &:hover {
-                    color: #FFF;
+                    color: #fff;
                 }
             }
 
@@ -50,12 +75,12 @@
                 justify-content: space-between;
 
                 span {
-                    transition: .3s;
+                    transition: 0.3s;
                     color: $white500;
                 }
 
                 svg {
-                    transition: .3s;
+                    transition: 0.3s;
                 }
 
                 &:hover {
@@ -71,12 +96,12 @@
                 transform: translate(-50%, -50%);
                 max-width: 600px;
                 width: 100%;
-                @include adaptiv-value("padding", 50, 30, 1);
+                @include adaptiv-value('padding', 50, 30, 1);
                 pointer-events: none;
-                background-color: #FFF;
+                background-color: #fff;
                 border: none;
 
-                >.close {
+                > .close {
                     position: absolute;
                     top: 20px;
                     right: 20px;
@@ -84,7 +109,7 @@
 
                 img {
                     max-width: 130px;
-                    @include adaptiv-value("margin-bottom", 50, 30, 1);
+                    @include adaptiv-value('margin-bottom', 50, 30, 1);
                 }
 
                 h2 {
@@ -92,29 +117,28 @@
                 }
 
                 &::backdrop {
-                    background-color: rgba(0, 0, 0, 0.60);
+                    background-color: rgba(0, 0, 0, 0.6);
                     opacity: 0.75;
                 }
 
                 &[open] {
-                    animation: myFadeIn .4s ease normal;
+                    animation: myFadeIn 0.4s ease normal;
                     pointer-events: inherit;
                 }
             }
 
             &:hover {
                 .founders-card__background {
-                    transform: scale(1.1) translate(10px, 10px);
+                    transform: scale(1.1);
                 }
 
                 a {
-                    border-bottom: 1px solid #FFF;
+                    border-bottom: 1px solid #fff;
                 }
-
 
                 .founders-card__button {
                     span {
-                        color: #FFF;
+                        color: #fff;
                     }
                 }
             }

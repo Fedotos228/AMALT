@@ -1,4 +1,4 @@
-import * as flsFunctions from './modules/functions.js'
+import * as flsFunctions from './modules/functions.js';
 import Stlightbox from 'stlightbox';
 
 flsFunctions.isWebp();
@@ -9,14 +9,14 @@ const burger = document.querySelector('.burger');
 const menu = document.querySelector('.header__nav');
 
 if (burger && menu) {
-    flsFunctions.burger(burger, menu, header)
+    flsFunctions.burger(burger, menu, header);
 }
 if (header) {
-    flsFunctions.fixedHeader(header)
+    flsFunctions.fixedHeader(header);
 }
 
 if (document.querySelectorAll('[data-dropdown]')) {
-    flsFunctions.dropdown()
+    flsFunctions.dropdown();
 }
 
 new Swiper('.slider-gallery__body', {
@@ -28,31 +28,27 @@ new Swiper('.slider-gallery__body', {
         nextEl: '.slider-arrow__next',
         prevEl: '.slider-arrow__prev',
     },
-})
+});
 
 const foundersCard = document.querySelectorAll('.founders-card');
 
 if (foundersCard) {
-    foundersCard.forEach(item => {
-        const dialog = item.querySelector(".founders-dialog");
+    foundersCard.forEach((item) => {
+        const dialog = item.querySelector('.founders-dialog');
         const showButton = item.querySelector('.founders-card__button');
-        const closeButton = item.querySelector(".founders-dialog .close");
+        const closeButton = item.querySelector('.founders-dialog .close');
 
-        showButton.addEventListener("click", () => {
+        showButton.addEventListener('click', () => {
             dialog.showModal();
             document.body.classList.add('lock');
         });
 
-        closeButton.addEventListener("click", () => {
+        closeButton.addEventListener('click', () => {
             dialog.close();
             document.body.classList.remove('lock');
         });
-
-    })
+    });
 }
-
-
-
 
 const lightbox = new Stlightbox({
     pagination: true,
@@ -63,21 +59,27 @@ const scrollBtn = document.querySelector('.scroll-top');
 
 var body = document.body;
 var html = document.documentElement;
-var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+var height = Math.max(
+    body.scrollHeight,
+    body.offsetHeight,
+    html.clientHeight,
+    html.scrollHeight,
+    html.offsetHeight,
+);
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > height / 4) {
-        scrollBtn.classList.add('active')
+        scrollBtn.classList.add('active');
     } else {
-        scrollBtn.classList.remove('active')
+        scrollBtn.classList.remove('active');
     }
-})
+});
 
 if (scrollBtn) {
     scrollBtn.addEventListener('click', () => {
         window.scrollTo({
             top: 0,
-            behavior: "smooth"
-        })
-    })
+            behavior: 'smooth',
+        });
+    });
 }
